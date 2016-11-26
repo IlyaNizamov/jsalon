@@ -9,6 +9,10 @@ body, html {
     height: 100%;
 }
 
+#SelectTown{
+    width:350px;
+}
+
 .navbar-default {
     margin: 0;
 }

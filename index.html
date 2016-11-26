@@ -60,17 +60,7 @@
                     <button type="submit" class="btn btn-default">Submit</button>
                 </form>
                 <form class="navbar-form navbar-right">
-                    <select data-placeholder="Выбрать город..." class="form-control" style="width:350px;" tabindex="2">
-                        <option value=""></option>
-                        <optgroup label="Область 1">
-                            <option value="М1">М1</option>
-                            <option value="М2">М2</option>
-                        </optgroup>
-                        <optgroup label="Область 2">
-                            <option value="С1">С1</option>
-                            <option value="С2">С2</option>
-                        </optgroup>
-                    </select>
+                    <select class="form-control" id="SelectTown" OnChange="reloadYaMap()"></select>
                 </form>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -81,7 +71,7 @@
 <div id="response1C"></div>
 
 <script>
-    resp1c();
+    setupFrom1C();
 </script>
 
 <!--<div id="map"></div>-->
