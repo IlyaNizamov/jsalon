@@ -9,6 +9,7 @@ function setupFrom1C() {
         }
     };
     xhr.send();
+
 }
 
 function reloadYaMap() {
@@ -23,8 +24,9 @@ function reloadYaMap() {
     xhr.onload = function () {
         if (xhr.status = 200) {
             cityData = JSON.parse(xhr.responseText);
-            myMap.setCenter([cityData.N, cityData.E],cityData.M);
+           // myMap.setCenter([cityData.N, cityData.E],cityData.M);
         }
     };
     xhr.send();
 }
+
